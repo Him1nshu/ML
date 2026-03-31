@@ -32,6 +32,12 @@ print(kmns.inertia_)
 
 
 
+
+pred=kmns.predict(sc_df)
+
+sc_df['cluster']=pred
+print(df.head())
+
 wcss=[]
 
 for i in range(1,21):
